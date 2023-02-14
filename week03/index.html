@@ -1,103 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Ways of Seeing by John Berger</title>
-	<style>
-        body {
-        background-color: mediumseagreen;
+  <head>
+    <title>Ways of Seeing by John Berger</title>
+    <style>
+      body {
+        font-family: Helvetica, sans-serif;
       }
-		#image-box {
-			width: 500px;
-			height: 500px;
-			border: 1px solid black;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-		
-		#image-box img {
-			max-width: 100%;
-			max-height: 100%;
-			display: none;
-		}
-		
-		#image-box img.active {
-			display: block;
-		}
-    #container {
-			display: flex;
-			flex-direction: row;
-			height: 100%;
-		}
-    #right {
-			flex: 1;
-			background-color: lightgray;
-			padding: 20px;
-			box-sizing: border-box;
-			text-align: left;
-			font-size: 18px;
-			font-family: Arial, sans-serif;
-			color: black;
-			border: 1px solid black;
-			border-radius: 10px;
-			margin: 20px;
-		}
-    p {
-  border: 5px solid plum;
-}
-#my-text-box {
-			width: 300px;
-			height: 100px;
-			border: 2px solid pink;
-			padding: 10px;
-			font-size: 30px;
-			font-family: Helvetica, sans-serif;
-			color: pink;
-			transition: all 0.5s ease;
-		}
-		
-		#my-text-box:hover {
-			width: 400px;
-			height: 150px;
-			font-size: 40px;
-			cursor: pointer;
-		}
-	</style>
-	<script>
-		let currentImage = 0;
-		
-		function showNextImage() {
-			let images = document.querySelectorAll('#image-box img');
-			images[currentImage].classList.remove('active');
-			currentImage = (currentImage + 1) % images.length;
-			images[currentImage].classList.add('active');
-		}
-		
-		function startSlideshow() {
-			setInterval(showNextImage, 2000);
-		}
-		
-		window.onload = startSlideshow;
-	</script>
-</head>
-<body 
-	<h1 style="color:palevioletred; style="font-size: 26px;">Ways of Seeing by John Berger</h1>
-	<div id="image-box">
-		<img src="photo1.jpg" class="active" />
-		<img src="photo2.jpg" />
-		<img src="photo3.jpg" />
-		<img src="photo4.jpg" />
-	</div>
-  <div> 
-    <p> The idea that paintings and images' meanings can be changed when placed alongside other things or outside of their original context, for example, in a collage or in a film, was an idea I had not thought about. Art made in the Renaissance period was not created to be seen in our rooms, in our walls, but rather, in churches, museums, and houses from patrons. What came to mind when I thought of this was how I have a lot of post cards and posters on my wall from a lot of different museums, and how the art is from a varying of time periods, and how perhaps my personal curation of it has changed the meaning(s) behind some of the works. Additionally, Berger touched on a point that the modern reproduction of paintings separates them from their original context and meaning in which they were created. Seeing a photo of a painting from a few hundred years ago on an iPhone screen is a completely different experience than from seeing it at a viewing during the time in which it was created. Because of technological advancements, old art is allowed to be appreciated for years to come because of how easy it is to spread and reproduce images, but through this transition of technology, its meaning can get lost and/or changed when placed alongside other works.
-
-
-      In the second episode, Berger made a very thought-provoking point about the distinction between female nakedness vs. nudity in art. I had previously not separated the two, but thought that this idea related a lot to the male gaze in art, media, and culture. In nudes, female nakedness is seen as vain and immoral, yet the purpose of the work is to have viewers deliberately viewing the naked female body, displacing the sinfulness of lust and the male gaze onto the subject. Berger does this to emphasize an inequity between male and female subjects and their interpretation. The male gaze continues to persist in media, and I think that it is important that Berger pointed out this discrepancy. I also find it valuable that Berger put in interviews from women at the end, and I liked what one of the women said about how personal definitions of beauty (specifically in nude) and femininity is a product of culture and societal view(s) of women within a given time. 
-      </p>
+      #image-box {
+        float: left;
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      #text-box {
+        float: right;
+        width: 50%;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      #quote {
+        font-size: 36px;
+        color: pink;
+      }
+      #quote:hover {
+        font-size: 48px;
+      }
+      #paragraph {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="image-box">
+      <img src="photo1.jpg".jpg" onclick="changeImage(this)" />
+      <img src="photo2.jpg" onclick="changeImage(this)" />
+      <img src="photo3.jpg" onclick="changeImage(this)" />
+      <img src="photo4.jpg" onclick="changeImage(this)" />
+    </div>
+    <div id="text-box">
+      <h1>Ways of Seeing by John Berger</h1>
+      <div id="quote">
+        "They are there to feed an appetite, not to have any of their own"
       </div>
-      <h2>Hover Text Box Interaction</h2>
-	<div id="my-text-box">
-		They are there to feed an appetite, not to have any of their own.
-	</div>
-</body>
-</html>
+      <div id="paragraph">
+        <p>
+          The idea that paintings and images' meanings can be changed when placed alongside other things or outside of their original context, for example, in a collage or in a film, was an idea I had not thought about. Art made in the Renaissance period was not created to be seen in our rooms, in our walls, but rather, in churches, museums, and houses from patrons. What came to mind when I thought of this was how I have a lot of post cards and posters on my wall from a lot of different museums, and how the art is from a varying of time periods, and how perhaps my personal curation of it has changed the meaning(s) behind some of the works. Additionally, Berger touched on a point that the modern reproduction of paintings separates them from their original context and meaning in which they were created. Seeing a photo of a painting from a few hundred years ago on an iPhone screen is a completely different experience than from seeing it at a viewing during the time in which it was created. Because of technological advancements, old art is allowed to be appreciated for years to come because of how easy it is to spread and reproduce images, but through this transition of technology, its meaning can get lost and/or changed when placed alongside other works.
+        </p>
+        <p>
+          In the second episode, Berger made a very thought-provoking point about the distinction between female nakedness vs. nudity in art. I had previously not separated the two, but thought that this idea related a lot to the male gaze in art, media, and culture. In nudes, female nakedness is seen as vain and immoral, yet the purpose of the work is to have viewers deliberately viewing the naked female body, displacing the sinfulness of lust and the male gaze onto the subject. Berger does this to emphasize an inequity between male and female subjects and their interpretation. The male gaze continues to persist in media, and I think that it is important that Berger pointed out this discrepancy. I also find it valuable that Berger put in interviews from women at the end, and I liked what one of the women said about how personal definitions of beauty (specific
