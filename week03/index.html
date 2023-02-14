@@ -34,6 +34,17 @@
     
     
     In the second episode, Berger made a very thought-provoking point about the distinction between female nakedness vs. nudity in art. I had previously not separated the two, but thought that this idea related a lot to the male gaze in art, media, and culture. In nudes, female nakedness is seen as vain and immoral, yet the purpose of the work is to have viewers deliberately viewing the naked female body, displacing the sinfulness of lust and the male gaze onto the subject. Berger does this to emphasize an inequity between male and female subjects and their interpretation. The male gaze continues to persist in media, and I think that it is important that Berger pointed out this discrepancy. I also find it valuable that Berger put in interviews from women at the end, and I liked what one of the women said about how personal definitions of beauty (specifically in nude) and femininity is a product of culture and societal view(s) of women within a given time.</div>
-    <div class="quote-box">"They are there to feed an appetite, not to have any of their own"</div>
+    <div class="quote-box">"They are there to feed an appetite, not to have any of their own"
+    
+        <img class="photo" src="photo1.jpg width="200 height="100" onclick="changePhoto(this)">
+        <img class="photo" src="photo2.jpg width="200 height="100" onclick="changePhoto(this)">
+        <img class="photo" src="photo3.jpg width="200 height="100" onclick="changePhoto(this)">
+        <img class="photo" src="photo4.jpg width="200 height="100" onclick="changePhoto(this)">
+      <script>
+        function changePhoto(photo) 
+          var photos = ['photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg'];
+          var currentIndex = photos.indexOf(photo.src.split('/').pop());
+          var nextIndex = (currentIndex + 1) % photos.length;
+          photo.src = photos[nextIndex]; </div>
   </body>
 </html>
