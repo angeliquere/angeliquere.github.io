@@ -1,0 +1,35 @@
+body {
+  width: 500px;
+  height: 1400px;
+  margin: 0 auto;
+}
+
+p {
+  background: plum;
+  border: 10px solid paleturquoise;
+  padding: 10px;
+  margin: 10px;
+}
+
+span {
+  background: gray;
+  border: 1px solid orchid
+}
+
+h1 {
+  position: fixed;
+  top: 0px;
+  width: 500px;
+  margin-top: 0;
+  background:firebrick;
+  padding: 10px;
+}
+
+p:nth-of-type(1) {
+  margin-top: 60px;
+}
+
+#naked {
+width:400px;
+height:auto
+}
