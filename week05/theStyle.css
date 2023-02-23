@@ -1,0 +1,45 @@
+body {
+    background-color: green;
+}
+
+main {
+    border: solid 10px pink;
+    background-color: rgb(100,100,100);
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+p {
+    border: solid 10px yellow;
+    padding: 4vw;
+    margin: 30px; 
+    color: pink;
+    display: flex;
+    justify-content: space-around;
+    font-family: "HigherPixels";
+    font-size: 60px;
+    text-align: justify;
+}
+button {
+    margin: 100px;
+    background-color: pink;
+    color: yellow;
+    font-family: "HertzFriedeberg-ULTRA";
+    font-size: 24px;
+    border-radius: 4vw;
+    border: solid 10 px yellow;
+}
+
+button:hover {
+    background-color: transparent;
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: lightgreen;
+    }
+    main {
+        background-color: purple;
+    }
+}
