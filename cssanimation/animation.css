@@ -1,0 +1,49 @@
+body
+{
+    margin:0;
+    padding: 0;
+}
+.sky
+{
+    height: 100vh;
+    background-image:url(sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    overflow-x: hidden;
+}
+.grass
+    {
+    display: block;
+    background-image: url(grass.png);
+    background-repeat: repeat-x;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 200px;
+    width: 100%;
+    }
+.pug
+{
+    background-image: url(pug.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name:pug;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position:absolute;
+    left: 50%;
+    bottom: 20vh;
+    height: 20vh;
+    width: 400px;
+}
+@keyframes pug {
+    from{
+        left:0;
+    }
+    to{
+        left:100%
+        }
+    }
