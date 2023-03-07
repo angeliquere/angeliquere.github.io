@@ -14,7 +14,7 @@ body
 }
 .grass
     {
-    display: block;
+    display: flex;
     background-image: url(grass.png);
     background-repeat: repeat-x;
     background-size: contain;
