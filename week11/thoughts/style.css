@@ -1,0 +1,46 @@
+body {
+ background-image: url("background.jpg");
+ font-family: 'Jost', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+font-family: 'Jost', sans-serif;
+  font-size: 72px;
+  margin-bottom: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.quote-box {
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid #333;
+}
+
+blockquote {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 0;
+}
+
+img {
+  border: 5px solid #333;
+  max-width: 30%;
+  height:auto
+}
