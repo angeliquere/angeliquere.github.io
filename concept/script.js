@@ -1,7 +1,7 @@
 const startButton = document.querySelector('#start-button');
 // directs user to home page
 startButton.addEventListener('click', function() {
-  window.location.href = "../gamehome/index.html";
+  window.location.href = "../concept/gamehome/index.html";
 });
 
     
