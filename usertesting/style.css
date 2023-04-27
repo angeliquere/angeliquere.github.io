@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #003152;
+  }
+  
+  .background-image {
+    background-image: url('https://ssb.wiki.gallery/images/thumb/5/56/SSBU-Living_Room.png/1200px-SSBU-Living_Room.png');
+    /* from nintendogswiki */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .loading-screen {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .logo {
+    position: relative;
+  }
+  
+  .logo-text {
+    font-family: "Digital-7";
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color: rgb(195, 33, 33);
+    margin-top: 40px;
+  }
+  
+  .floating-png {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: float 3s ease-in-out infinite;
+    width: 100px;
+    height: 100px;
+  }
+  /* from https://www.models-resource.com/ds_dsi/nintendogs/ */
+  
+  
+  @keyframes float {
+    0% {
+      transform: translate(-50%, -10%);
+    }
+    50% {
+      transform: translate(-50%, 10%);
+    }
+    100% {
+      transform: translate(-50%, -10%);
+    }
+  }
+  /* https://www.geeksforgeeks.org/css-floating-animation/ */
+  .text {
+    margin-top: 20px;
+  }
+  
+  .text h1 {
+    font-size: 36px;
+    margin: 0;
+    animation: fadeinout 3s ease-in-out infinite;
+    color: rgba(89, 133, 89, 0.748)
+  }
+  
+  @keyframes fadeinout {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* https://medium.com/cloud-native-the-gathering/how-to-use-css-to-fade-in-and-fade-out-html-text-and-pictures-f45c11364f08 */
+  .text button {
+    background-color: #4463c8;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px; 
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  .text button:hover {
+    background-color: #0cce77;
+  }
+  
+ 

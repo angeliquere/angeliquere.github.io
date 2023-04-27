@@ -1,0 +1,31 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#happiness {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+}
+#happiness-count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+}
+#feed-me {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff8080;
+    text-shadow: 2px 2px #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
