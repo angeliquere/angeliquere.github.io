@@ -64,8 +64,8 @@ function draw() {
         } else {
             choccyShadow.update(width-40, (3 * height/4) + 60, 50);
             image(choccy, width-100, (3 * height)/4, 100, 100); 
-
         }
+        
 
         
        
