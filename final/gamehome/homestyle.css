@@ -1,0 +1,79 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#happiness {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+#happiness-count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: pink;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button */
+
+.walking {
+    position: absolute;
+    width: 200px;
+    top: 80vh;
+    left: 45vw;
+    border: 0;
+    line-height: 3.5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: #F073A3;
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.walking:hover {
+    background-color: #FF7AAD;
+}
+
+.walking:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+#doggybutton {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 77vh;
+    left: 94vw;
+    z-index: 1;
+}
+/* #cjlying {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -55%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+} */

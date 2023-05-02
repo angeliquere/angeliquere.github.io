@@ -1,0 +1,56 @@
+
+body  {
+/* https://alvarotrigo.com/blog/animated-backgrounds-css/ */
+  background-image: url('https://t3.ftcdn.net/jpg/01/08/35/40/360_F_108354006_9B0exEGO2WsuvutOrJiQgGD43StfFllE.jpg');
+  background-size:cover;
+        animation: slidein 1000s; /* animation time */
+
+        animation-fill-mode: forwards;
+
+        animation-iteration-count: infinite;
+
+        animation-direction: linear; /* picture moves straight across the screen */
+}
+
+@keyframes slidein {
+from {background-position: top; background-size:1500px; }
+to {background-position: -300000px 0px; background-size:1500px;} /* repeats for a long time */
+
+}
+
+.centered {
+  position: relative;
+}
+
+#walking-pug {
+  position: absolute;
+  width: 20vw;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#happy {
+  position: absolute;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  top: 20px;
+  left: 10px;
+  color: white;
+}
+
+#back {
+  position: absolute;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  top: 70px;
+  left: 10px;
+  color: white;
+}
+
+#sparkles {
+  position: absolute;
+  height: 60vh;
+  top: 10vh;
+  left: 30vw;
+}
