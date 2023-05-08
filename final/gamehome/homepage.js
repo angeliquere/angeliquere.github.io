@@ -20,6 +20,7 @@ function preload() {
     avo = loadImage("avo.png");
     choccy = loadImage("chocolate.png");
     ding = loadSound('ding.mp3');
+    doom= loadSound('doom.mp3');
 }
 
 function setup() {
@@ -106,6 +107,7 @@ function mousePressed() {
     //if they click on the chocolate
     if (mouseX >= width-100 && mouseX <= width && mouseY >= (3 * height)/4 && mouseY <= (3 * height)/4 + 100) {
         happiness = 0;
+        doom.play();
     }
    
 } 
